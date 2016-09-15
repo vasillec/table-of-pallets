@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>WOODER</title>
+</head>
+<body>
+	<header class="main-header">
+		<!-- begin header-navblock -->
+		<div class="header-navblock">
+			<!-- begin header-navblock-wrap -->
+			<div class="header-navblock-wrap">
+				<!-- begin container -->
+				<div class="container-fluid">
+					<!-- begin row -->
+
+					<!-- begin header-nav -->
+					<nav id="header-nav" class="navbar navbar-default" >
+						<ul class="header-contact hidden-sm hidden-xs">
+							<li><p class="contact-item">+38 (063) 123-45-67</p></li>
+							<li><a class="contact-item" href="mailto:test@gmail.com">test@gmail.com</a></li>
+						</ul>
+						<div class="navbar-header">
+							<a class="navbar-brand" id="header-logo" href="index.html"></a>
+							<button class="navbar-toggle" type="button" data-target="#navbarCollapse" data-toggle="collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- begin navbarCollapse -->
+						<div id="navbarCollapse" class="collapse navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">ГЛАВНАЯ</a></li>
+								<li><a href="#">КАТАЛОГ</a></li>
+								<li><a href="contacts.html">КОНТАКТЫ</a></li>
+							</ul>
+						</div><!-- end navbarCollapse -->
+
+					</nav><!-- end header-nav -->
+
+				</div><!-- end container -->
+			</div><!-- end header-navblock -->
+		</div><!-- end header-navblock-wrap -->
+	</header>
+
+	<div class="catalog-wrap">
+		<!-- begin catalog -->
+		<div class="jumbotron catalog-jumbotron">
+			<div class="content-wrap">
+				<div class="js-hover-gray col col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-0">
+
+					<div class="content-catalog-item">
+						<div class="video-jumbotron-title">
+							<p>МЕБЕЛЬ ДЛЯ<br> <span class="brown-dot">ЖИЗНИ</span></p>
+							<a class="download-file btn btn-brown btn-brown-lg" href="files/testfile2.pdf" role="button">СКАЧАТЬ КАТАЛОГ<span class="hidden-xxs"> ДЛЯ ЖИЗНИ</span> (PDF)</a>
+						</div>
+					</div>
+
+					<img src="img/catalog-bg-left.png" class="grayscale grayscale-fade img-responsive">
+				</div>
+				<div class="js-hover-gray col col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-0">
+
+					<div class="content-catalog-item">
+						<div class="video-jumbotron-title">
+							<p>МЕБЕЛЬ ДЛЯ<br> <span class="brown-dot">БИЗНЕСА</span></p>
+							<a class="download-file btn btn-brown btn-brown-lg" href="files/testfile3.pdf" role="button">СКАЧАТЬ КАТАЛОГ<span class="hidden-xxs"> ДЛЯ БИЗНЕСА</span> (PDF)</a>
+						</div>
+					</div>
+
+					<img src="img/catalog-bg-right.png" class="grayscale grayscale-fade img-responsive">
+				</div>
+			</div>
+		</div><!-- end catalog -->
+
+		<a  href="" id="showPopUp">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</a>
+	</div>
+	
+	<div class="footer-down">
+		<!-- begin footer -->
+		<footer>
+			<a id="footer-logo" href="index.html"></a>
+			<span >© 2016 WOODER</span>
+			<ul class="hidden-xs footer-menu">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="#">Каталог</a></li>
+				<!-- <li><a href="#">О нас</a></li> -->
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+		</footer><!-- end footer -->
+	</div>
+
+
+	<div id="popup" class="popup">
+
+		<img src="img/popup-background.png" class="img-responsive">
+		<div class="raquest-form-wrap">
+
+			<form class="request-form-static request-form form-horizontal" role="form">
+				<h4>ОСТАВЬТЕ ЗАЯВКУ</h4>
+				<p>и мы поможем вам подобрать<br>подходящую мебель из<br>европоддонов:</p>
+				<input type="text" class="form-control"  name="requestInputName" placeholder="Ваше имя">
+				<input type="tel" class="form-control"  name="requestInputPhone" placeholder="Ваш телефон">
+				<input type="email" class="form-control"  name="requestInputEmail" placeholder="Ваш Email">
+				<button type="submit" class="btn-brown">ОСТАВИТЬ ЗАЯВКУ</button>
+				<p>Или позвоните по телефону:<br><span class="request-phone">+38 (063) 123-45-67</span></p>
+			</form>
+			<div class="raquest-form-title hidden-sm hidden-xs">
+				<p>Оставьте заявку<br>на рассчет комплекта</p>
+				<p>и подберите мебель<br> для своего интерьера</p>
+			</div>
+
+		</div>
+	</div>
+	<div id="hide-layout" class="hide-layout"></div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="modalResponse" tabindex="-1" role="dialog" aria-labelledby="modalResponseLabel" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content alert-error">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="modalResponseLabel">ОШИБКА</h4>
+				</div>
+				<div class="modal-body" id="modalResponseBody">
+				</div>
+				<div class="modal-footer">
+					<button id="modalResponseButton" type="button" class="btn btn-brown btn-brown-lg" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
+
+
+
+
+
